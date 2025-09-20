@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Indian Restaurant Finder</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Maps API with Places Library -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx1epjh1-8bsJPeq-lKejOscfBf-WoNlQ&libraries=places"></script>
+</head>
+<body>
+  <header>
+    <h1>Indian Restaurant Finder</h1>
+    <p>Explore top-rated Indian restaurants near you!</p>
+    <form id="searchForm">
+      <input type="text" id="locationInput" placeholder="Enter a city or area" required />
+      <button type="submit">Search</button>
+    </form>
+  </header>
+  <main>
+    <div class="listing-map-container">
+      <div class="restaurant-list" id="restaurant-list"></div>
+      <div id="map" class="map"></div>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Indian Restaurant Finder. Powered by Google Maps.
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
